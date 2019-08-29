@@ -72,7 +72,7 @@ export default AppView
       style: true
     }]
 ```
-####decorator报错
+#### decorator报错
 #### 虽然已经默认安装了装饰器编译的babel插件，然而新版的eslint却没有放过我们。在你的eslint配置文件中加入如下配置即可
 ```
 "parserOptions": {
