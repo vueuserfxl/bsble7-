@@ -45,11 +45,11 @@ loaders: [
   ]
   ```
 *  运行npm run build，出现以下报错情况的解决方式：
-## 情景一：（你会发现报错的都是在export default 上一行用了修饰器(@**)的文件,所以你首先要将babelConfig.js中plugins里的插件安装好）
+#### 情景一：（你会发现报错的都是在export default 上一行用了修饰器(@**)的文件,所以你首先要将babelConfig.js中plugins里的插件安装好）
 ```
 Parsing error: Using the export keyword between a decorator and a class is not allowed. Please use `export @dec class` instead.
 ```
-## 解决方式：修改对应jsx文件为
+#### 解决方式：修改对应jsx文件为
 ```
 @connect('aaa')
  class AppView extends React.Component{
